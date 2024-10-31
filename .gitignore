@@ -1,6 +1,14 @@
 # Rust
 target
 
+# Python
+## poetry environment
+.venv
+## python cache
+__pycache__
+## pyenv version
+.python-version
+
 # ROS 2
 install
 build
