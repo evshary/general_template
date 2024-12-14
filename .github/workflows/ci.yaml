@@ -37,8 +37,6 @@ jobs:
   #build_test_rust:
   #  runs-on: ubuntu-latest
   #  steps:
-  #    - name: Install clang
-  #      run: sudo apt-get install -y clang-12 libclang-12-dev
   #    - uses: actions/checkout@v4
   #    - uses: dtolnay/rust-toolchain@master
   #      with:
@@ -48,7 +46,8 @@ jobs:
   #      run: |
   #        cargo check --all --tests
   #    - name: Check code format
-  #      run: cargo fmt --check -- --config "unstable_features=true,imports_granularity=Crate,group_imports=StdExternalCrate"
+  #      run: |
+  #        cargo fmt --check -- --config "unstable_features=true,imports_granularity=Crate,group_imports=StdExternalCrate"
   #    - name: Run cargo clippy
   #      run: |
   #        cargo clippy --version
