@@ -7,6 +7,8 @@ on:
   pull_request:
     paths:
       - "**"
+  schedule:
+    - cron: '0 1 * * *'
   # Able to call by other workflow
   workflow_call:
   # Able to call on GitHub
