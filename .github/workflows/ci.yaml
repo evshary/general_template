@@ -33,6 +33,12 @@ jobs:
           config: '.markdownlint.yaml'
           globs: '**/*.md'
 
+  # python_lint_format:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - uses: astral-sh/ruff-action@v2
+
   #build_test_rust:
   #  runs-on: ubuntu-latest
   #  steps:
