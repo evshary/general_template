@@ -8,6 +8,12 @@ TODO: Remember to update the following files for your onwn needs
 
 ## Usage
 
+* Install prerequisite.sh
+
+```shell
+./prerequisite.sh
+```
+
 * Install pre-commit
 
 ```shell

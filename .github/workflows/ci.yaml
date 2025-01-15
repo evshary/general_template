@@ -33,6 +33,16 @@ jobs:
           config: '.markdownlint.yaml'
           globs: '**/*.md'
 
+  bash_lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+      - name: Install ShellCheck
+        run: sudo apt-get install -y shellcheck
+      - name: Run ShellCheck
+        run: find . -name "*.sh" -print0 | xargs -0 shellcheck -e SC1091
+
   # python_lint_format:
   #   runs-on: ubuntu-latest
   #   steps:
